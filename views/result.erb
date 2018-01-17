@@ -3,27 +3,23 @@
 </script>
 <p id="date"> </p>
 <head>
-<title>Name Game</title>
+<title>Book ISBN</title>
 <link href="<%= url('/css/main.css') %>" rel= "stylesheet" type="text/css" />
 </head>
 <body>
-The name that you are looking for is:
+The book you are looking for is:
 <br>
 <br>
-<% full_name = fname(fname.capitalize)
-if full_name == nil
-full_name = "This name is not in our class" 
-end %>
-<%= full_name %>
+<%= bname %>
 <br>
-<img alt="namegame" src="/img/name_is.png" width="300" height="250" />
+<% location = picture(bname) %>
+<img src = <%= location %>  style="width: 18%;" align="middle";>
 <br>
 <br>
-Try another name
+Try another book
 <a href='//localhost:4567'>Go!</a>
 </center>
 </body>
-</form>
 <script>
 window.onload=getOrderDate('date');
 </script>

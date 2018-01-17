@@ -3,26 +3,34 @@
 </script>
 <p id="date"> </p>
 <head>
-<title>Name Game</title>
+<title>Book ISBN</title>
 <link href="<%= url('/css/main.css') %>" rel= "stylesheet" type="text/css" />
 </head>
 <body>
+Welcome to the Book Club
 <br>
-Welcome to Doug`s Name Game
+<img alt="book" src="/img/stach.png" width="100" height="100" />
+<br>
+What book do you want to see?
 <br>
 <br>
-<img alt="NameGame" src="/img/name.jpg" width="300" height="250" />
+<form method="post" action="book_choice">
+<input type="radio" name="bname" value="Harry Potter Chamber of Secretes"> Harry Potter Chamber of Secrets
 <br>
-Type in first name of person you want to see
-<form method="post" action="name_choice">
-    <input type="text"  name="fname">
-    <br>
-    <input type="submit">
-    <br>
-    <br>
+<input type="radio" name="bname" value="Wizard of Oz"> Wizard of Oz
+<br>
+<input type="radio" name="bname" value="Jaws"> Jaws
+<br>
+<input type="radio" name="bname" value="Adventures of Tom Sawer"> Adventures of Tom Sawer
+<br>
+<input type="radio" name="bname" value="Cat in the Hat"> Cat in the Hat
+<br>
+<br>
+<input type="submit" value="Get Book">
+</form>
 </center>
 </body>
-</form>
+
 <script>
     window.onload=getOrderDate('date');
 </script>

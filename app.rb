@@ -1,16 +1,16 @@
 require "sinatra"
-require_relative "namegame.rb"
+require_relative "bookisbn.rb"
 
 get '/' do
 	erb :home
 end
 
-post '/name_choice' do
-	fname = params[:fname]
-    redirect '/result?fname=' + fname
+post '/book_choice' do
+	bname = params[:bname]
+    redirect '/result?bname=' + bname
 end
 
 get '/result' do
-	fname = params[:fname]
-    erb :result, :locals => {:fname => fname}
+	bname = params[:bname]
+    erb :result, :locals => {:bname => bname}
 end

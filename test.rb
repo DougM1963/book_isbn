@@ -18,3 +18,4 @@ class Testnamegame < Minitest::Test
 	def test_assert_Wizard_of_Oz_returns_0345335902
 		assert_equal("0345335902", bname("Wizard of Oz"))
 	end
+end
