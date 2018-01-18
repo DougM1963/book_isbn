@@ -9,12 +9,12 @@
 <body>
 The book you are looking for is:
 <br>
-<br>
 <%= bname %>
 <br>
 <% location = picture(bname) %>
-<img src = <%= location %>  style="width: 18%;" align="middle";>
-<br>
+<img src = <%= location %>  style="width: 10%" align="middle";><br>
+<% isbn_num = number(isbn_num) %>
+ISBN: <%= isbn_num %>
 <br>
 Try another book
 <a href='//localhost:4567'>Go!</a>
