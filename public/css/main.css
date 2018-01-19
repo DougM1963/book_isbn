@@ -1,5 +1,5 @@
 body {
-	background-color: red;
+	background-color: #f67280;
 	color: black;
 	background-image: url(/../imgs/blue.jpg);
 	font-size: 30px;
@@ -13,7 +13,7 @@ p {
 
 footer {
   	border-top: solid;
-  	border-color: black;
+  	border-color: #f67280;
   	text-align: center;
   	position: fixed;
   	bottom: 0;
